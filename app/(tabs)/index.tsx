@@ -13,7 +13,7 @@ export default function HomeScreen() {
       setCarregando(true);
       setVerso('');
 
-      const response = await axios.post('https://8acbf745-f7ce-412f-ac68-5743c5432848-00-3h8h1vd83ipk3.riker.replit.dev/'); // 🔁 Substitua por sua URL pública
+      const response = await axios.post('https://biblia-verso-backend.onrender.com'); // 🔁 Substitua por sua URL pública
       const novoVerso = response.data.verso?.trim();
       setVerso(novoVerso || 'Erro: verso vazio');
     } catch (error) {
